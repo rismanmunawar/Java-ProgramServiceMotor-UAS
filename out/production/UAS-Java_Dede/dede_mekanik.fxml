@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dede_mekanik">
+    <children>
+        <Label layoutX="227.0" layoutY="25.0" text="Master Mekanik" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Label>
+        <Label layoutX="75.0" layoutY="76.0" text="ID Mekanik" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Label>
+        <Label layoutX="75.0" layoutY="104.0" text="Nama Mekanik" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Label>
+        <Label layoutX="75.0" layoutY="131.0" text="Alamat Mekanik" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Label>
+        <Label layoutX="75.0" layoutY="158.0" text="No. Telp. Mekanik" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Label>
+        <Label layoutX="75.0" layoutY="184.0" text="Cari Mekanik" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Label>
+        <TextField fx:id="txidMK" layoutX="199.0" layoutY="71.0" prefHeight="25.0" prefWidth="201.0" />
+        <TextField fx:id="txnamaMK" layoutX="199.0" layoutY="98.0" prefHeight="25.0" prefWidth="201.0" />
+        <TextField fx:id="txalamatMK" layoutX="199.0" layoutY="125.0" prefHeight="25.0" prefWidth="201.0" />
+        <TextField fx:id="txnoMK" layoutX="199.0" layoutY="152.0" prefHeight="25.0" prefWidth="201.0" />
+        <TextField fx:id="txCariMK" layoutX="199.0" layoutY="180.0" prefHeight="25.0" prefWidth="201.0" />
+        <TableView fx:id="tmekanik_dede" layoutX="29.0" layoutY="219.0" prefHeight="165.0" prefWidth="542.0">
+            <columns>
+                <TableColumn fx:id="colidMK" prefWidth="93.0" text="ID" />
+                <TableColumn fx:id="colnamaMK" prefWidth="137.0" text="Nama" />
+                <TableColumn fx:id="colalamatMK" prefWidth="146.0" text="Alamat" />
+                <TableColumn fx:id="colnoMK" prefWidth="165.0" text="No. Telepon" />
+            </columns>
+        </TableView>
+        <Button fx:id="bttambahMK" layoutX="410.0" layoutY="72.0" mnemonicParsing="false" onAction="#tambahData" prefHeight="25.0" prefWidth="97.0" text="Tambah Data" />
+        <Button fx:id="bteditMK" layoutX="410.0" layoutY="98.0" mnemonicParsing="false" onAction="#editData" prefHeight="25.0" prefWidth="97.0" text="Edit Data" />
+        <Button fx:id="bthapusMK" layoutX="410.0" layoutY="125.0" mnemonicParsing="false" onAction="#hapusData" prefHeight="25.0" prefWidth="97.0" text="Hapus Data" />
+        <Button fx:id="btresetMK" layoutX="410.0" layoutY="152.0" mnemonicParsing="false" onAction="#resetData" prefHeight="25.0" prefWidth="97.0" text="Reset Data" />
+        <Button fx:id="btkeluarDede" layoutX="410.0" layoutY="180.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="97.0" text="Keluar" />
+    </children>
+</AnchorPane>

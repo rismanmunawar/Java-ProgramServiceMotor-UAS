@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dede_controllerservice">
+   <children>
+      <MenuBar prefHeight="25.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#KeluarAplikasi" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Master Data">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#BukaFormPelanggan" text="Data Pelanggan" />
+                  <MenuItem mnemonicParsing="false" onAction="#BukaFormMekanik" text="Data Mekanik" />
+                  <MenuItem mnemonicParsing="false" onAction="#BukaFormLayanan" text="Data Layanan" />
+                  <MenuItem mnemonicParsing="false" onAction="#BukaFormTransaksi" text="Data Transaksi" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="About">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#BukaFormProgram" text="This Program" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <ImageView fitHeight="401.0" fitWidth="600.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/bg1.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
